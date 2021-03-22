@@ -6,7 +6,7 @@ Linux Privilege Escalation techniques &amp; resources
   - [user enum](#user-enum)
   - [network enum](#network-enum)
   
-
+- [password hunting](#password-hunting)
 
 
 
@@ -69,3 +69,25 @@ sometimes a network can have two adapters in it, or might have nic's in, dual ne
 `netstat -ano`
 
 check which mc's are talking to the target & if needed to exploit or listen to trafic etc. 
+
+#
+
+## Password hunting
+
+### Colour code search items
+
+`grep --color=auto -rnw '/' -ie "PASSWORD" --color=always 2> /dev/null`
+
+color the word password wherever it finds.
+
+`locate password` // search for file named password (be creative like pass, pwd etc)
+
+`find /name id_rsa 2> /dev/null`
+
+get decent in searching through files
+
+best enums are like going through 100s & 1000s of line just to find the password.
+
+look for interesting files that might contain password.
+
+#
