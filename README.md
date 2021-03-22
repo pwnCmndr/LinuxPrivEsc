@@ -1,10 +1,10 @@
 # LinuxPrivEsc
 Linux Privilege Escalation techniques &amp; resources
 
-Enumeration
- - [system enum](#system-enum)
- - [user enum](#user-enum)
- - [network enum](#network-enum)
+- Enumeration
+  - [system enum](#system-enum)
+  - [user enum](#user-enum)
+  - [network enum](#network-enum)
   
 
 
