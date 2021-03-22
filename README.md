@@ -138,7 +138,8 @@ Possible Exploits:
    ext-url: https://raw.githubusercontent.com/bcoles/kernel-exploits/master/CVE-2019-13272/poc.c
    Comments: Requires an active PolKit agent.
 ```
-## Linuxprivchecker py
+## Linuxprivchecker
+
 https://github.com/sleventyeleven/linuxprivchecker
 
 ### Usage
