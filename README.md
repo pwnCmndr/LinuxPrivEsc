@@ -5,9 +5,12 @@ Linux Privilege Escalation techniques &amp; resources
   - [system enum](#system-enum)
   - [user enum](#user-enum)
   - [network enum](#network-enum)
-  
 - [password hunting](#password-hunting)
-
+- [Automated tools](#automated-tools)
+  - [linpeas](#linpeas)
+  - [linenum](#linenum)
+  - [linux exploit suggestor](#linux-exploit-suggestor)
+  - [Linuxprivchecker](#linuxprivchecker)
 
 
 
@@ -91,3 +94,55 @@ best enums are like going through 100s & 1000s of line just to find the password
 look for interesting files that might contain password.
 
 #
+## Automated Tools
+
+## Linpeas
+https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS
+
+### Basic Usage
+
+```sh
+curl wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh | sh
+```
+
+## LinEnum
+
+https://github.com/rebootuser/LinEnum
+
+https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh
+
+### Basic Usage
+
+```sh
+./LinEnum.sh -s -k keyword -r report -e /tmp/ -t
+```
+
+## Linux Exploit suggestor
+
+https://github.com/mzet-/linux-exploit-suggester
+
+### Usage & example output
+
+```sh
+./les.sh
+```
+```sh
+Possible Exploits:
+
+[+] [CVE-2019-13272] PTRACE_TRACEME
+
+   Details: https://bugs.chromium.org/p/project-zero/issues/detail?id=1903
+   Exposure: highly probable
+   Tags: ubuntu=16.04{kernel:4.15.0-*},ubuntu=18.04{kernel:4.15.0-*},debian=9{kernel:4.9.0-*},[ debian=10{kernel:4.19.0-*} ],fedora=30{kernel:5.0.9-*}
+   Download URL: https://github.com/offensive-security/exploitdb-bin-sploits/raw/master/bin-sploits/47133.zip
+   ext-url: https://raw.githubusercontent.com/bcoles/kernel-exploits/master/CVE-2019-13272/poc.c
+   Comments: Requires an active PolKit agent.
+```
+## Linuxprivchecker py
+https://github.com/sleventyeleven/linuxprivchecker
+
+### Usage
+
+```sh
+python linuxprivchecker.py
+```
